@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AnimeFind" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--        <item name="colorPrimary">#282828</item>-->
+<!--        <color name="almost_black">#121212</color>-->
+<!--        <color nameray">#212121</color>-->
+<!--        <color name="hint_gray">#9E9E9E</color>-->
+<!--        <color name="pure_white">#FFFFFF</color>-->
+<!--        <color name="pink_accent">#FF0057</color>-->
+<!--        <color name="disabled_gray">#5E5E5E</color>-->
+    </style>
+
+    <style name="Theme.AnimeFind" parent="Base.Theme.AnimeFind" />
+    <style name="Theme.AnimeFinder.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+</resources>
