@@ -12,7 +12,7 @@ interface JikanApiService {
     // Get top anime list
     @GET("top/anime")
     suspend fun getTopAnime(
-        @Query("page") page: Int = 1
+        @Query("page") page: Int
     ): AnimeResponse
 
     // Get anime details by ID

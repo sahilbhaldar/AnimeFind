@@ -16,7 +16,7 @@ interface AnimeDao {
     suspend fun insertAnime(anime: AnimeEntity)
 
     // Get all anime as a list (one-time)
-    @Query("SELECT * FROM anime_table ORDER BY score DESC")
+    @Query("SELECT * FROM anime_table ORDER BY score ASC")
     suspend fun getAllAnime(): List<AnimeEntity>
 
     // Get all anime as a flow (for observing in ViewModel/UI)
@@ -40,4 +40,8 @@ interface AnimeDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAnimeList(anime: List<AnimeEntity>)
+
+    // <-- Add this method
+    @Query("SELECT MAX(pageNumber) FROM anime_table")
+    suspend fun getMaxPage(): Int?
 }

@@ -19,3 +19,15 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class com.example.animefind.domain.model.** { *; }
+-keepattributes *Annotation*
+-keep class androidx.room.** { *; }
+-keep class * extends androidx.room.RoomDatabase
+-keep class com.google.gson.** { *; }
+-keep class com.example.animefind.** { *; }
+-keep class retrofit2.** { *; }
+-dontwarn retrofit2.**
+-keep class com.example.animefind.domain.model.** { *; }
+-keep class com.example.animefind.data.remote.** { *; }
+
